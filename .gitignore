@@ -1,5 +1,5 @@
 # Ignore .env file
-api/.env
+/api/.env
 
 # Ignore build directories
 bin/
