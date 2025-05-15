@@ -1,0 +1,23 @@
+<svg width="553" height="551" viewBox="0 0 553 551" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="anim_frame-projects">
+<g id="fp-notepad">
+<rect id="fp-notepad-base" x="37" y="37" width="328" height="410" rx="10" fill="#4661DA"/>
+<rect id="fp-notepad-line1" x="63" y="79" width="196" height="22" rx="11" fill="#FF4A93"/>
+<rect id="fp-notepad-line2" x="63" y="127" width="232" height="22" rx="11" fill="#69F069"/>
+<rect id="fp-notepad-line3" x="63" y="175" width="248" height="22" rx="11" fill="#EFF49D"/>
+<rect id="fp-notepad-line4" x="63" y="223" width="215" height="22" rx="11" fill="#FFA4A4"/>
+</g>
+<g id="fp-gear">
+<circle id="fp-gear-large" cx="352" cy="366" r="122.5" fill="#1A1A1A" stroke="white" stroke-width="5"/>
+<circle id="fp-gear-small" cx="351.5" cy="365.5" r="62.5" fill="white"/>
+<rect id="gear-rect1" x="324" y="206" width="56" height="70" rx="5" fill="#1A1A1A"/>
+<rect id="gear-rect2" width="55.9128" height="70.8895" rx="5" transform="matrix(0.708209 -0.706003 0.708209 0.706003 218 265.409)" fill="#1A1A1A"/>
+<rect id="gear-rect3" x="192" y="393.411" width="55.8255" height="71" rx="5" transform="rotate(-90 192 393.411)" fill="#1A1A1A"/>
+<rect id="gear-rect4" width="55.9128" height="70.8895" rx="5" transform="matrix(0.708209 0.706003 -0.708209 0.706003 255.205 409.361)" fill="#1A1A1A"/>
+<rect id="gear-rect5" x="324" y="456" width="56" height="70" rx="5" fill="#1A1A1A"/>
+<rect id="gear-rect6" width="55.9128" height="70.8895" rx="5" transform="matrix(0.708209 -0.706003 0.708209 0.706003 401 448.836)" fill="#1A1A1A"/>
+<rect id="gear-rect7" x="441" y="393.411" width="55.8255" height="71" rx="5" transform="rotate(-90 441 393.411)" fill="#1A1A1A"/>
+<rect id="gear-rect8" width="55.9128" height="70.8895" rx="5" transform="matrix(0.708209 0.706003 -0.708209 0.706003 446.205 225.935)" fill="#1A1A1A"/>
+</g>
+</g>
+</svg>

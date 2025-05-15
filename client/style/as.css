@@ -1,0 +1,215 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('https://fonts.cdnfonts.com/css/pf-tempesta-seven');
+
+
+/* windows */
+.app-screen {
+    position: absolute;
+    z-index: 10;
+
+    width: 900px;
+    height: 600px;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 100vw;
+    border: 3px solid black;
+    color: white;
+
+    resize: both;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 30px auto;
+    border-radius: 5px;
+}
+.app-screen.hide {
+    display: none;
+}
+.app-screen-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-credits-toolbar,
+.app-credits-content {
+    background-color: black;
+}
+
+
+/* toolbar */
+.as-toolbar {
+    display: grid;
+    grid-template-columns: auto 15px 15px 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    line-height: 25px;
+}
+.as-toolbar:hover {
+    cursor: grab;
+}
+.dynamic-toolbar {
+    display: grid;
+    grid-template-columns: 30px auto;
+    height: 100%;
+}
+.dynamic-toolbar img {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+.as-toolbar-min,
+.as-toolbar-max,
+.as-toolbar-exit {
+    border-radius: 3px;
+    text-align: center;
+}
+.as-toolbar-min:hover,
+.as-toolbar-max:hover,
+.as-toolbar-exit:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.as-aboutme-img {
+    width: 250px;
+    height: auto;
+    margin: 0;
+}
+
+/* container */
+.as-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.as-aboutme-content {
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.as-aboutme-content a {
+    color: #4661da;
+}
+
+/* about me "screen" */
+.app-aboutme-toolbar {
+    background-color: #1a1a1a;
+    color: white;
+}
+.app-aboutme-content {
+    color: #1a1a1a;
+    background-color: rgb(201, 201, 201);
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Proxima Nova Condensed', sans-serif;
+}
+.app-aboutme-content img {
+    width: 250px;
+    height: auto;
+}
+.app-aboutme-content h1 {
+    font-size: 45px;
+}
+
+/* menu */
+.as-aboutme-menu {
+    position: fixed;
+}
+.as-aboutme-menu div {
+    box-sizing: border-box;
+    padding: 8px;
+    border-right: 1.5px solid #4661da;
+    border-left: 1.5px solid rgb(70, 97, 218);
+}
+.as-aboutme-menu div:hover,
+.as-aboutme-menu div.active {
+    cursor: pointer;
+    background-color: rgb(70, 97, 218);
+    text-decoration: underline;
+    color: white;
+}
+.as-linkbox {
+    width: 100%;
+    height: 80px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.experience-tools {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.experience-tools div {
+    border: 3px solid transparent;
+    background-color: #4661da;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px 5px 5px 0px;
+}
+
+.icon {
+    font-size: 60px;
+}
+
+.experience-tools div:hover {
+    border-color: #1a1a1a;
+    transform: scale(1.5);
+}
+
+/* scrollbars */
+.app-aboutme-content::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+.app-aboutme-content::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 4px; /* Optional: rounded corners for the thumb */
+}
+
+.app-aboutme-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Scrollbar thumb color on hover */
+}
+
+.app-aboutme-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+}
+
+/* queries */
+@media screen and (max-width: 1100px) {
+
+    .app-screen {
+        width: 400px;
+        height: 300px;
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .as-aboutme-img {
+        width: 80px;
+    }
+
+}
+@media screen and (max-width: 680px) {
+
+    .app-screen {
+        width: 250px;
+        height: 300px;
+    }
+
+}

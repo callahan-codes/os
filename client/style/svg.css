@@ -1,0 +1,72 @@
+#fp-gear {
+    animation: rotate-gear 5s linear infinite;
+    transform-origin: 352px 366px; /* Center of the gear */
+}
+
+#strobes rect {
+  animation: growShrink 2s infinite;
+}
+
+#bulb-strobe1 {
+  animation-delay: 0s;
+}
+
+#bulb-strobe2 {
+  animation-delay: 0.4s; /* Delay staggered animations */
+}
+
+#bulb-strobe3 {
+  animation-delay: 0.8s;
+}
+
+#bulb-strobe4 {
+  animation-delay: 1.2s;
+}
+
+#bulb-strobe5 {
+  animation-delay: 1.6s;
+}
+
+#anim_frame-contact-sub {
+  transform-origin: center center; /* Rotate around the center of the frame */
+  animation: rotateFlagFrame 7s infinite; /* 7s total duration for each cycle */
+}
+  
+@keyframes rotate-gear {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes growShrink {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 61px; /* Full height of the strobe */
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes rotateFlagFrame {
+  0% {
+    transform: rotate(0deg) translateX(0); /* Initial position */
+  }
+  25% {
+    transform: rotate(-90deg) translateY(82px); /* Rotate 90 degrees and move 80px to the right */
+  }
+  50% {
+    transform: rotate(-90deg) translateY(82px); /* Hold at 90 degrees and move 80px to the right */
+  }
+  75% {
+    transform: rotate(0deg) translateX(0); /* Rotate back to 0 degrees and return to original position */
+  }
+  100% {
+    transform: rotate(0deg) translateX(0); /* Return to original position */
+  }
+}
